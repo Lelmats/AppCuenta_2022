@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,77 +10,102 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppCuenta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingresa total de cuenta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OO0-vY-bRa">
-                                <rect key="frame" x="29" y="85" width="210" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuànto quieres dejar de propina?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXJ-A5-d82">
+                                <rect key="frame" x="29" y="199" width="412" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="ch8-dD-Qep"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Cuànto quieres dejar de propina?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXJ-A5-d82">
-                                <rect key="frame" x="29" y="200" width="318" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Propina:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptu-jZ-U20">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Propina:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptu-jZ-U20">
                                 <rect key="frame" x="29" y="347" width="77" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqa-MU-gre">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqa-MU-gre">
                                 <rect key="frame" x="297" y="347" width="89" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="89" id="3RI-lk-jEB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCD-at-rXx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCD-at-rXx">
                                 <rect key="frame" x="297" y="405" width="89" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total con propina:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ima-eL-iTI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total con propina:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ima-eL-iTI">
                                 <rect key="frame" x="29" y="405" width="166" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="17" minValue="5" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="2il-TK-cpQ">
-                                <rect key="frame" x="27" y="254" width="361" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="17" minValue="5" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="2il-TK-cpQ">
+                                <rect key="frame" x="27" y="253" width="361" height="31"/>
                                 <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="sliderPropina:" destination="BYZ-38-t0r" eventType="valueChanged" id="jI0-z7-ohy"/>
                                 </connections>
                             </slider>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ejemplo: 900" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5fs-yq-WLy">
-                                <rect key="frame" x="29" y="135" width="357" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QW9-7y-7by">
+                                <rect key="frame" x="352.66666666666669" y="291" width="33.333333333333314" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ejemplo: 900" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5fs-yq-WLy">
+                                <rect key="frame" x="29" y="126" width="357" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QW9-7y-7by">
-                                <rect key="frame" x="289" y="291" width="97" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa total de cuenta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OO0-vY-bRa">
+                                <rect key="frame" x="29" y="87" width="210" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.89506464855748535" green="0.94992458026846471" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OO0-vY-bRa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="0hv-1m-SaN"/>
+                            <constraint firstItem="OO0-vY-bRa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="3yw-Dy-kW9"/>
+                            <constraint firstItem="ptu-jZ-U20" firstAttribute="leading" secondItem="2il-TK-cpQ" secondAttribute="leading" id="4YX-VC-lBU"/>
+                            <constraint firstItem="5fs-yq-WLy" firstAttribute="top" secondItem="OO0-vY-bRa" secondAttribute="bottom" constant="13" id="7Xi-wk-MdR"/>
+                            <constraint firstItem="gqa-MU-gre" firstAttribute="trailing" secondItem="2il-TK-cpQ" secondAttribute="trailing" id="C5H-T3-8qS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QW9-7y-7by" secondAttribute="trailing" constant="28" id="Far-TY-3Fl"/>
+                            <constraint firstItem="ptu-jZ-U20" firstAttribute="baseline" secondItem="gqa-MU-gre" secondAttribute="baseline" id="N7H-Ub-63h"/>
+                            <constraint firstItem="gqa-MU-gre" firstAttribute="trailing" secondItem="5fs-yq-WLy" secondAttribute="trailing" id="NtA-rb-FYQ"/>
+                            <constraint firstItem="rXJ-A5-d82" firstAttribute="top" secondItem="OO0-vY-bRa" secondAttribute="bottom" constant="86" id="PaX-p7-vVe"/>
+                            <constraint firstItem="ptu-jZ-U20" firstAttribute="leading" secondItem="5fs-yq-WLy" secondAttribute="leading" id="Pw2-va-SmN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gqa-MU-gre" secondAttribute="trailing" constant="28" id="RFG-nz-EFc"/>
+                            <constraint firstItem="2il-TK-cpQ" firstAttribute="top" secondItem="rXJ-A5-d82" secondAttribute="bottom" constant="28" id="YXy-Q9-6tS"/>
+                            <constraint firstItem="QW9-7y-7by" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="Yof-ef-Stz"/>
+                            <constraint firstItem="QW9-7y-7by" firstAttribute="top" secondItem="2il-TK-cpQ" secondAttribute="bottom" constant="8" id="Yuw-8P-zy1"/>
+                            <constraint firstItem="KCD-at-rXx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ima-eL-iTI" secondAttribute="trailing" constant="8" symbolic="YES" id="ZJ8-h9-Gjq"/>
+                            <constraint firstAttribute="trailing" secondItem="rXJ-A5-d82" secondAttribute="trailing" constant="-27" id="aWI-15-Bmr"/>
+                            <constraint firstItem="gqa-MU-gre" firstAttribute="trailing" secondItem="KCD-at-rXx" secondAttribute="trailing" id="bvd-Os-KcC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OO0-vY-bRa" secondAttribute="trailing" symbolic="YES" id="hgD-lu-I0F"/>
+                            <constraint firstItem="ptu-jZ-U20" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rXJ-A5-d82" secondAttribute="leading" id="kya-Za-9uz"/>
+                            <constraint firstItem="KCD-at-rXx" firstAttribute="top" secondItem="gqa-MU-gre" secondAttribute="bottom" constant="32" id="lMs-9P-dYL"/>
+                            <constraint firstItem="ptu-jZ-U20" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="347" id="qzh-OV-ZXI"/>
+                            <constraint firstItem="ptu-jZ-U20" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="tGx-QN-uGI"/>
+                            <constraint firstItem="gqa-MU-gre" firstAttribute="leading" secondItem="KCD-at-rXx" secondAttribute="leading" id="uNz-bO-NRp"/>
+                            <constraint firstItem="ima-eL-iTI" firstAttribute="top" secondItem="ptu-jZ-U20" secondAttribute="bottom" constant="32" id="us4-8q-f5g"/>
+                            <constraint firstItem="gqa-MU-gre" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ptu-jZ-U20" secondAttribute="trailing" constant="8" symbolic="YES" id="w5U-6R-4vF"/>
+                            <constraint firstItem="ptu-jZ-U20" firstAttribute="leading" secondItem="ima-eL-iTI" secondAttribute="leading" id="woS-NB-p3S"/>
+                            <constraint firstItem="ptu-jZ-U20" firstAttribute="top" secondItem="2il-TK-cpQ" secondAttribute="bottom" constant="64" id="z3v-Xf-SZf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -91,6 +116,7 @@
                         <outlet property="lblTotalConPropina" destination="KCD-at-rXx" id="etp-tR-D1T"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
